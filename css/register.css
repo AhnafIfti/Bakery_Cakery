@@ -1,0 +1,173 @@
+/*
+1. Global CSS
+2. Header CSS
+	2.1 - Navigation Menu
+3. Sign in section
+4. Footer Section
+*/
+
+/* Global CSS */
+body{
+	font-family: 'Roboto Slab', serif;
+	background-color: #EDEFF1;
+
+}
+.center{
+	margin: 0 auto;
+	display: block;
+}
+a:hover{
+	text-decoration: none;
+}
+/* Navigation Menu */
+.navbar-default {
+    background-color: #fff;
+    border-color: #fff;
+    margin: 0;
+    height: 85px;
+    font-size: 25px;
+}
+.navbar {
+    border-radius: 0px;
+    font-family: 'Bangers', cursive;
+}
+.navbar-right {
+    padding-top: 16px;
+}
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a{
+    color: #000;
+    background-color: transparent;
+    margin-right: 20px;
+}
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+    color: #fff;
+    background-color: #8f312f;
+    border-radius: 50px;
+	transition: 0.5s;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+    color: #fff;
+    background-color: #8f312f;
+    border-radius: 50px;
+}
+/* Sign in section starts*/
+
+
+h1{
+	font-family: 'Bangers', cursive;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin  {
+  position: relative;
+  box-sizing: border-box;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  margin: 20px 0px;
+
+}
+.form-control{
+	height: 40px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+form p{
+	margin: 15px 0px 30px;
+}
+/* Sign in section ends*/
+
+/* Footer Section CSS */
+footer{
+	background: #8f312f;
+	padding: 50px 0px;
+	font-size: 12px;
+}
+footer ul li{
+	list-style: none;
+}
+footer li{
+	color: #fff;
+	line-height: 30px;
+}
+footer ul li a{
+	color: #fff;
+}
+footer ul li a:hover{
+	left: 15px;
+	transition: 0.5s ease-in-out;
+	position: relative;
+	color: skyblue;
+}
+.fa{
+	padding-right: 15px;
+}
+.footer-bg{
+	background-color: black;
+	background-size: cover;
+}
+.footer-bg p{
+	color: #fff;
+	font-size: 13px;
+	line-height: 20px;
+}
+.newsletter-opacity{
+	-webkit-background: rgba(0,0,0,.4);
+	-moz-background: rgba(0,0,0,.4);
+	-o-background: rgba(0,0,0,.4);
+	background: rgba(0,0,0,.4);
+	padding: 60px 0px;
+}
+
+.btn{
+	    padding: 10px 35px;
+    margin: 30px 0px;
+    font-size: 17px;
+}
+
+/* Mediaq Query Start */
+/* For Mobile Device */
+@media screen and (max-width: 480px){
+	.bg-img h1 {
+	    padding-top: 75px;
+	    font-size: 36px;
+	}
+	.news-section{
+		padding: 0px 0px;
+	}
+	.news-section h1 {
+		font-size: 36px !important;
+		padding-bottom: 15px;
+	}
+	.blog-section {
+	    padding: 10px 0px;
+	    text-align: center;
+	}
+	.blog-section h1 {
+	    font-size: 36px;
+	    padding-bottom: 0px;
+	}
+}
